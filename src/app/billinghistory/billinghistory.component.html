@@ -1,0 +1,23 @@
+<div style="text-align:left;width:500px;">
+<h1>{{title}}</h1>
+  <table *ngIf="arrSavedBilling">
+    <!-- ADD HEADERS -->
+    <tr>
+      <th id="na" >Sno</th>
+      <th id="na">Date Added</th>
+      <th id="na">Total Price</th>
+      <th id="na">Details</th>
+      <th id="na">Bill ID</th>
+    </tr>
+
+
+    <tr *ngFor="let bird of arrSavedBilling">
+      <td id="na">{{bird.sno}}</td>
+      <td id="na">{{bird.date_added}}</td>
+      <td id="na">{{bird.total_price }}</td>
+      <td id="na">{{bird.details}}</td>
+      <td id="na">{{bird.bill_id}}</td>
+    </tr>
+  </table>
+
+ </div>

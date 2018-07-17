@@ -1,0 +1,28 @@
+td,th {
+
+  background-color:#f2f2f2 ;
+
+  margin:10px;
+  font-size: large;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Helvetica Neue";
+}
+
+table{
+  width: 900px;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+#na{
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+
+}

@@ -1,0 +1,24 @@
+<div style="text-align:left;width:500px;">
+
+  <table *ngIf="arrBirds">
+    <!-- ADD HEADERS -->
+    <tr>
+      <th id="na" >Sno</th>
+      <th id="na">Name</th>
+      <th id="na">Code</th>
+      <th id="na">Price</th>
+      <th id="na">GST</th>
+    </tr>
+
+
+    <tr *ngFor="let bird of arrBirds">
+      <td id="na">{{bird.sno}}</td>
+      <td id="na">{{bird.name}}</td>
+      <td id="na">{{bird.code }}</td>
+      <td id="na">{{bird.price}}</td>
+      <td id="na">{{bird.gst}}</td>
+    </tr>
+  </table>
+
+  <button (click)="addButton()" pButton type="button" class="ui-button-success" label="ADD BUTTON"></button>
+</div>
