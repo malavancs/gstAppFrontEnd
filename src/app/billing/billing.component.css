@@ -1,0 +1,46 @@
+#searchtext{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-self: center;
+  align-content: center;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  elevation: 40deg;
+}
+.ui-button-success {
+  background-color: #00ee00;
+  color: #f2f2f2;
+  padding: 10px;
+  margin-left: 100px;
+  align-items: center;
+}
+td,th {
+
+  background-color:#f2f2f2 ;
+
+  margin:10px;
+  font-size: large;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Helvetica Neue";
+}
+
+table{
+  width: 900px;
+  margin-top: 80px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+#na{
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px;
+
+}

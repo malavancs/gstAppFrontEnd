@@ -23,6 +23,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
+import { SearchresultDialogComponent } from './searchresult-dialog/searchresult-dialog.component';
 const materialModules = [
   MatButtonModule,
   MatMenuModule,
@@ -75,12 +76,13 @@ const materialModules = [
     ProducttableComponent,
     AddProductComponent,
     CourseDialogComponent,
+    SearchresultDialogComponent,
 
 
   ],
   exports: [...materialModules],
   bootstrap: [AppComponent],
-  entryComponents: [CourseDialogComponent]
+  entryComponents: [CourseDialogComponent, SearchresultDialogComponent]
 
 
 })

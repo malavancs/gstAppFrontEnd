@@ -43,12 +43,15 @@ export class ProductComponent implements OnInit {
       title: 'Angular For Beginners'
     };
 
-    this.dialog.open(CourseDialogComponent, dialogConfig);
+   // this.dialog.open(CourseDialogComponent, dialogConfig);
 
     const dialogRef = this.dialog.open(CourseDialogComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe(
-      data => console.log('Dialog output:', data)
+      data => {console.log('Dialog output:', data);
+      this.ngOnInit();
+      }
+
     );
   }
 

@@ -1,1 +1,40 @@
-<p>Malavan</p>
+<br>
+<br>
+<input #newHero  id="searchtext"type="text" value="Enter your search term here !" >
+<button (click)="searchButton(newHero.value)" pButton type="button" class="ui-button-success" label="SEARCH BUTTON"></button>
+<br>
+<br>
+<h1 *ngIf="!arrBirds">Your cart is empty</h1>
+<table *ngIf="arrBirds">
+  <!-- ADD HEADERS -->
+  <tr>
+    <th id="na" >Sno</th>
+    <th id="na">Name</th>
+    <th id="na">Code</th>
+    <th id="na">Price</th>
+    <th id="na">GST</th>
+    <th id="na">Total Price</th>
+  </tr>
+
+
+  <tr *ngFor="let bird of arrBirds">
+    <td id="na">{{bird.sno}}</td>
+    <td id="na">{{bird.name}}</td>
+    <td id="na">{{bird.code }}</td>
+    <td id="na">{{bird.price}}</td>
+    <td id="na">{{bird.gst}}</td>
+    <td id="na">{{bird.total_price}}</td>
+  </tr>
+
+</table>
+
+
+<table>
+  <tr>
+    <td id="na" style="align-content: end">Total sum :{{arrSum.TotalSum}}</td>
+    <button  (click)="makeBill()" pButton type="button" class="ui-button-success" label="Make Bill"></button>
+
+  </tr>
+</table>
+<br>
+
