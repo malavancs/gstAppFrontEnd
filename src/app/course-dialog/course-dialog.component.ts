@@ -47,7 +47,7 @@ export class CourseDialogComponent implements OnInit {
   save() {
     this.dialogRef.close(this.form.value);
 
-  this.httpClient.post('http://localhost:4001/products/addProduct', {
+  this.httpClient.post('https://gst-billing-backend.herokuapp.com/products/addProduct', {
     name: this.form.value.name,
     gst: this.form.value.gst,
     code: this.form.value.code,

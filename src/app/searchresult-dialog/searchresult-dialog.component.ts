@@ -44,7 +44,7 @@ export class SearchresultDialogComponent implements OnInit {
 
   ngOnInit() {
     this.sessionNumber = this.randomIntFromInterval();
-    this.httpClient.get('http://localhost:4001/products/searchTerm?name=' + this.queryString)
+    this.httpClient.get('https://gst-billing-backend.herokuapp.com/products/searchTerm?name=' + this.queryString)
       .subscribe(data1 => {
         console.log(data1);
         if (!data1) {
@@ -76,7 +76,7 @@ export class SearchresultDialogComponent implements OnInit {
 
   save() {
 
-    this.httpClient.post('http://localhost:4001/products/addItemToCart', {
+    this.httpClient.post('https://gst-billing-backend.herokuapp.com/products/addItemToCart', {
       name: this.form.value.name,
       gst: this.form.value.gst,
       code: this.form.value.code,

@@ -5,4 +5,7 @@ h1{
   background: #00ee00;
   text-shadow: #0b2e13;
 }
-
+a{
+  margin: 10px;
+  padding: 10px;
+}

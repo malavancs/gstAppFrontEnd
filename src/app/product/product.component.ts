@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit {
   title = 'GST BILLING APP';
   dialogRef: any;
   arrBirds: string[];
-  private serviceUrl = 'http://localhost:4001/products/getAllProduct';
+  private serviceUrl = 'https://gst-billing-backend.herokuapp.com/products/getAllProduct';
   constructor(private http: HttpClient, private dialog: MatDialog) {
 
   }

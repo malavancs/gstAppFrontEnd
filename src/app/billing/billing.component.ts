@@ -32,7 +32,7 @@ export class BillingComponent implements OnInit {
   }
 
   loadData() {
-    this.http.get('http://localhost:4001/products/getAllInCart?sessionid=' + this.sessionNumber)
+    this.http.get('https://gst-billing-backend.herokuapp.com/products/getAllInCart?sessionid=' + this.sessionNumber)
       .subscribe(data1 => {
         console.log(data1 as string);
         this.arrBirds = data1 as string;
@@ -41,7 +41,7 @@ export class BillingComponent implements OnInit {
   }
 
   loadSum() {
-    this.http.get('http://localhost:4001/products/getTotalPrice?sessionid=' + this.sessionNumber)
+    this.http.get('https://gst-billing-backend.herokuapp.com/products/getTotalPrice?sessionid=' + this.sessionNumber)
       .subscribe(data1 => {
         console.log(data1 as string);
         this.arrSum = data1 as string;
@@ -87,7 +87,7 @@ export class BillingComponent implements OnInit {
 
   makeBill() {
     console.log('Fuck off');
-    this.http.post('http://localhost:4001/products/makeBill', {
+    this.http.post('https://gst-billing-backend.herokuapp.com/products/makeBill', {
       billid: this.sessionNumber,
       details: 'ProductDetails',
       totalprice: this.arrSum.TotalSum
